@@ -32,7 +32,7 @@ def predict(model, image, device):
 
 
 def main():
-    st.title("Wheat Rust Detection Dashboard")
+    st.title("Plant Disease Detection Dashboard")
 
     # Sidebar inputs
     st.sidebar.header("Model Configuration")
