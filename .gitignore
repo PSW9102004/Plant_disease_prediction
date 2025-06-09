@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+
+**pycache**/
+\*.py\[cod]
+\*\$py.class
+
+# Jupyter Notebook Checkpoints
+
+.ipynb\_checkpoints/
+
+# Environment and virtualenvs
+
+.env
+.venv
+env/
+venv/
+
+# VS Code and PyCharm settings
+
+.vscode/
+.idea/
+
+# MacOS / Linux / Windows system files
+
+.DS\_Store
+Thumbs.db
+
+# Model checkpoints and logs
+
+checkpoints/
+\*.pth
+\*.pt
+\*.log
+\*.ckpt
+
+# Datasets and generated folders
+
+data/raw/combined\_split\_\*/
+data/raw/PlantDoc/
+data/raw/PlantVillage/
+
+# Misc
+
+\*.bak
+\*.tmp
+\*.swp
+
+# Streamlit logs and cache
+
+.streamlit/
+logs.txt
+
+# Kaggle token
+
+kaggle.json
