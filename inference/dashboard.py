@@ -36,7 +36,10 @@ def main():
 
     # Sidebar inputs
     st.sidebar.header("Model Configuration")
-    checkpoint_path = st.sidebar.text_input("Checkpoint Path", value="checkpoints/best_model.pth")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    default_checkpoint = os.path.join(base_dir, "..", "checkpoints", "best_model.pth")
+    checkpoint_path = st.sidebar.text_input("Checkpoint Path", value=default_checkpoint)
+
     data_dir = st.sidebar.text_input("Data Directory", value="data/raw/PlantDoc/PlantDoc-Dataset/train")
     num_classes = st.sidebar.number_input("Number of Classes", value=27, min_value=2)
 
